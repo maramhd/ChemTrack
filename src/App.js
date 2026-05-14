@@ -33,7 +33,7 @@ function App() {
     if (user) localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
     else localStorage.removeItem(STORAGE_KEY);
   }, [user]);
-
+//يضمن بقاء المستخدم مسجّل الدخول حتى بعد تحديث الصفحة.
   // inject favicon dynamically from LOGO (since file is in /src)
   useEffect(() => {
     const existing = document.querySelector("link[rel='shortcut icon']");
@@ -44,7 +44,7 @@ function App() {
     link.href = LOGO;
     document.head.appendChild(link);
   }, []);
-
+//يعمل مرة واحدة فقط عند تحميل التطبيق ويتم اضافته الى head 
   return (<Router>
   {user && <Navbar user={user} setUser={setUser} />}
 

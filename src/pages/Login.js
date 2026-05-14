@@ -8,7 +8,10 @@ export default function Login({ setUser }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const payload = { name: name.trim() || "User", accountType, plan: "Free" };
+    const payload = {
+      name: name.trim() || "User",
+      accountType, plan: "Free"
+    };
     setUser(payload);
     navigate("/");
   };

@@ -24,7 +24,7 @@ export default function AccountDropdown({ user, setUser }) {
         <div className="account-menu">
           <div className="account-item"><strong>{user.name}</strong></div>
           <div className="account-item small">Type: {user.accountType}</div>
-          <Link to="/settings" className="account-item" onClick={() => setOpen(false)}>Settings</Link>
+          {/* <Link to="/settings" className="account-item" onClick={() => setOpen(false)}>Settings</Link> */}
           <button className="account-item danger" onClick={logout}>Logout</button>
         </div>
       )}

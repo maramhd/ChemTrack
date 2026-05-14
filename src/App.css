@@ -42,17 +42,6 @@ body {
 .account-item.small { font-size:13px; color:#65737a; border-bottom:1px solid #f1f5f9; }
 .account-item.danger { color:#c0392b; border-bottom:none; background:none; width:100%; text-align:left; }
 
-/* ===== HERO ===== */
-.hero-section { display:flex; gap:28px; align-items:center; justify-content:space-between; padding:46px 28px; background: linear-gradient(180deg, rgba(6,63,155,0.06), rgba(255,255,255,0)); }
-.hero-left { max-width:64%; }
-.hero-logo { width:84px; height:84px; object-fit:contain; margin-bottom:12px; }
-.hero-left h1 { font-size:32px; color:#062b5a; margin-bottom:8px; }
-.hero-sub { color:#425466; font-size:16px; margin-bottom:18px; }
-.hero-right { min-width:260px; display:flex; justify-content:flex-end; }
-.hero-card { background:white; padding:18px; border-radius:12px; box-shadow:0 8px 26px rgba(13,38,76,0.06); width:100%; max-width:320px; }
-.hero-card h3 { margin-bottom:8px; color:#0b4fa1; }
-.hero-btn { display:inline-block; margin-top:10px; padding:10px 16px; border-radius:8px; background:#0b4fa1; color:white; font-weight:700; }
-
 /* ===== Intro ===== */
 .intro-section { padding:36px 28px; margin:18px 28px; background:#f0f6ff; border-radius:12px; }
 .intro-content h2 { font-size:22px; margin-bottom:10px; color:#092b56; }

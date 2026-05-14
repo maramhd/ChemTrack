@@ -39,8 +39,16 @@ export default function Navbar({ user, setUser }) {
         </a>
         {/* user display on nav (desktop) */}
         <div style={{ marginLeft: 12 }}>
-          {user ? <AccountDropdown user={user} setUser={setUser} /> : <Link to="/login" className="nav-link">Login</Link>}
+          {user ? <AccountDropdown user={user} setUser={setUser} /> 
+          : <Link to="/login" className="nav-link">Login</Link>}
         </div>
+        {/*إذا كان المستخدم مسجّل الدخول:
+
+يظهر اسمه في شريط التنقل.
+
+يمكنه فتح القائمة المنسدلة (AccountDropdown) لتسجيل الخروج.
+
+إذا لم يكن مسجّل الدخول → يظهر رابط تسجيل الدخول */}
       </nav>
 
       <div className="hamburger" onClick={() => setOpen(o => !o)}>
