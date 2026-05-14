@@ -1,0 +1,40 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: var(--secondary);
+  color: white;
+  padding: 30px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.dashboard-content {
+  flex: 1;
+}
+
+.navbar {
+  height: 80px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-container {
+  padding: 30px;
+}
